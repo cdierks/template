@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* Beim Import von Schriftarten: Mehrere Formate für Browser-Kompatibilität, relative Pfade für korrektes Laden, Performance beachten und responsive Textgrößen für Geräteübergreifende Kompatibilität verwenden. */
+/* Für umfassende Browser-Kompatibilität beim Schriftarten-Import: WOFF2 für moderne, WOFF für ältere und TTF als universelle Backup-Option verwenden. */
+/*
+@font-face {
+    font-family: 'NameIhrerSchriftart';
+    src: url('web-fonts/NameIhrerSchriftart.woff2') format('woff2'),
+         url('web-fonts/NameIhrerSchriftart.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/reset';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';

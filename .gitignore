@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+
+# Distribution directory
+dist/
+
+# Editor settings
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build artifacts
+*.log
+*.tlog
+*.log.*
+*.ipch
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.sdf
+*.suo
+*.opensdf
+*.sbr
+*.ilk
+*.aps
+*.mdmp
+
+# Packaging directories
+.packages/
+.publish/
+
+# Misc
+*.swp
+*~
+*.bak
+*.tmp
